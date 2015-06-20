@@ -53,5 +53,5 @@ aggregateData <- aggregate(data_mean_std[, 3:ncol(data_mean_std)],
 
 # write the data to the file
 write.table(format(aggregateData, scientific=T), "tidyData.txt",
-            row.names=F, col.names=T, quote=FALSE)
+            row.names=F, col.names=T, quote=2)
 
