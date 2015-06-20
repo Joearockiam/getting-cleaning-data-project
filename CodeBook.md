@@ -23,18 +23,19 @@ The dataset includes the following files:
 * test/y_test.txt: Test labels.
 
 #Steps for the project work
-##Step 1. Merge the training and the test sets to create one data set.
+##1. Merge the training and the test sets to create one data set.
 * Read all the test and training files: y_test.txt, subject_test.txt and X_test.txt.
 * Combine the files to a data frame in the form of subjects, labels, the rest of the data.
 
-##Step 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+##2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Read the features from features.txt and filter out the means(mean()) or standard deviations (std()). A new data frame is then created that includes subjects, labels and the described features.
 
-##Step 3. Uses descriptive activity names to name the activities in the data set.
+##3. Uses descriptive activity names to name the activities in the data set.
 * Read the activity labels from activity_labels.txt and replace with description
 
 ##Step 4. Appropriately labels the data set with descriptive variable names. 
 * replace the columns with the descriptive names without non-alphanuemric characters.
 
-##Step 5.creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+##5.creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 * Create a new data set by finding the mean for each combination of subject and labelusing aggregate() function
+
