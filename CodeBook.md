@@ -33,7 +33,7 @@ The dataset includes the following files:
 ##3. Uses descriptive activity names to name the activities in the data set.
 * Read the activity labels from activity_labels.txt and replace with description
 
-##Step 4. Appropriately labels the data set with descriptive variable names. 
+##4. Appropriately labels the data set with descriptive variable names. 
 * replace the columns with the descriptive names without non-alphanuemric characters.
 
 ##5.creates a second, independent tidy data set with the average of each variable for each activity and each subject.
