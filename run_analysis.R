@@ -46,10 +46,7 @@ colnames(data_mean_std) <- col_names
 
 ## step 5(creates a second, independent tidy data set with the average of each variable for each activity and each subject)
 # find the tidy data set with the average of each variable for each activity and each subject.
-aggregateData <- aggregate(data_mean_std[, 3:ncol(data_mean_std)],
-                       by=list(subject = data_mean_std$subject, 
-                               activitylabel = data_mean_std$activitylabel),
-                       mean)
+aggregateData <- aggregate(data_mean_std[, 3:ncol(data_mean_std)],by=list(subject = data_mean_std$subject,activitylabel = data_mean_std$activitylabel), mean)
 
 # write the data to the file
 write.table(format(aggregateData, scientific=T), "tidyData.txt",
