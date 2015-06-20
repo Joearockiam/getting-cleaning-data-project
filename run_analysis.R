@@ -1,5 +1,4 @@
-setwd("G:\\Datascience\\19062015\\UCI HAR Dataset")
-
+##Analysis
 ##Step-1
 # read all the test data set.
 test_labels <- read.table("test/y_test.txt", col.names="label")
