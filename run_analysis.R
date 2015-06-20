@@ -29,7 +29,7 @@ data_mean_std <- data[, c(1, 2, features_mean_std$V1+2)]
 
 ## step 3(Descriptive activity names to name the activities in the data set)
 # read the activity labels
-activity_labels <- read.table("activity_labels.txt", stringsAsFactors=FALSE)
+activity_labels <- read.table("activity_labels.txt")
 
 # replace labels in data with label description
 data_mean_std$label <- activity_labels[data_mean_std$label, 2]
