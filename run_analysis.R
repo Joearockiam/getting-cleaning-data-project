@@ -33,7 +33,7 @@ data_mean_std$label <- labels[data_mean_std$label, 2]
 
 ## step 4
 # first make a list of the current column names and feature names
-col_names <- c("subject", "label", features_mean_std$V2)
+col_names <- c("subject", "activitylabel", features_mean_std$V2)
 
 #clear non-aplhanumeric characters
 col_names<-tolower( gsub("[^[:alnum:] ]", "", col_names))
@@ -45,7 +45,7 @@ colnames(data_mean_std) <- col_names
 # find the tidy data set with the average of each variable for each activity and each subject.
 aggregateData <- aggregate(data_mean_std[, 3:ncol(data_mean_std)],
                        by=list(subject = data_mean_std$subject, 
-                               label = data_mean_std$label),
+                               activitylabel = data_mean_std$activitylabel),
                        mean)
 
 # write the data to the file
